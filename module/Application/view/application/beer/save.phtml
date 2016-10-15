@@ -1,15 +1,18 @@
 <?php echo $this->form()->openTag($form); ?>
-<div class="form_element">
+<div class="form-group">
     <?php echo $this->formRow($form->get('name')); ?>
 </div>
-<div class="form_element">
+<div class="form-group">
     <?php echo $this->formRow($form->get('style')); ?>
 </div>
-<div class="form_element">
+<div class="form-group">
     <?php echo $this->formRow($form->get('img')); ?>
 </div>
 <?php if ($form->has('id')): ?>
     <?php echo $this->formElement($form->get('id')) ?>
 <?php endif; ?>
+<div class="form-group">
 <?php echo $this->formElement($form->get('send')) ?>
+    <a class="btn btn-default" href="<?= $this->url('beer') ?>">Cancelar</a>
+</div>
 <?php echo $this->form()->closeTag() ?>

@@ -65,7 +65,7 @@ return [
                 'options' => [
                     'route' => '/auth/logout',
                     'defaults' => [
-                        'controller' => Controller\AuthController::class,
+                        'controller' => Controller\LoginController::class,
                         'action' => 'logout',
                     ],
                 ],

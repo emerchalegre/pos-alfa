@@ -68,7 +68,7 @@ class BeerController extends AbstractActionController {
     public function editAction() {
         /* configura o form */
         $form = $this->getForm();
-        $form->get('send')->setAttribute('value', 'Edit');
+        $form->get('send')->setAttribute('value', 'Salvar');
         $form->setAttribute('action', '/beer/edit');
         /* adiciona o ID ao form */
         $form->add([

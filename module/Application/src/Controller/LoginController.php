@@ -71,5 +71,12 @@ class LoginController extends AbstractActionController {
         }
         return $form;
     }
+    
+    public function logoutAction() {
+        if ($this->authService->hasIdentity()) {
+            $this->authService->clearIdentity();
+        }
+        return $this->redirect()->toRoute('login');
+    }
 
 }

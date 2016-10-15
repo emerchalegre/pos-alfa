@@ -9,27 +9,30 @@ class Beer extends Form {
 
     public function __construct() {
         parent::__construct();
+        $this->attributes = [
+            'class' => 'form-vertical',
+        ];
         $this->add([
             'name' => 'name',
             'options' => [
-                'label' => 'Beer name',
+                'label' => 'Marca',
             ],
-            // 'attributes' => [
-            //     'class' => 'form-control'
-            // ],
+            'attributes' => [
+                 'placeholder' => 'Marca da cerveja',
+            ],
             'type' => 'Text',
         ]);
         $this->add([
             'name' => 'style',
             'options' => [
-                'label' => 'Beer style',
+                'label' => 'Estilo',
             ],
             'type' => 'Text',
         ]);
         $this->add([
             'name' => 'img',
             'options' => [
-                'label' => 'Beer image',
+                'label' => 'Imagem',
             ],
             'type' => 'Text',
         ]);
@@ -37,7 +40,8 @@ class Beer extends Form {
             'name' => 'send',
             'type' => 'Submit',
             'attributes' => [
-                'value' => 'Create',
+                'value' => 'Salvar',
+                'class' => 'btn btn-default',
             ],
         ]);
         $this->setAttribute('action', '/beer/save');
