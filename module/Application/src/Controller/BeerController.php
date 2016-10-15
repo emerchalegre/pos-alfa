@@ -28,7 +28,7 @@ class BeerController extends AbstractActionController {
     private function getForm() {
         $form = new \Application\Form\Beer;
         foreach ($form->getElements() as $element) {
-            if (!$element instanceof \Zend\Form\Element\Submit) {
+            if (!$element instanceof \Zend\Form\Element\Submit && !$element instanceof \Zend\Form\Element\Button) {
                 $element->setAttributes([
                     'class' => 'form-control'
                 ]);

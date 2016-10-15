@@ -46,7 +46,7 @@ class LoginController extends AbstractActionController {
                 if ($result->isValid()) {
                     return $this->redirect()->toRoute('beer');
                 } else {
-                    $messageError = "Login Inválido!";
+                    $messageError = "Erro ao autenticar <br>Usuário: admin@email.com <br>Senha: 123";
                 }
             }
         }

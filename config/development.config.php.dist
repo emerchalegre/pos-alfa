@@ -8,10 +8,6 @@
 return [
     // Additional modules to include when in development mode
     'modules' => [
-<<<<<<< HEAD
-=======
-        'ZendDeveloperTools',
->>>>>>> 07fab3383b0e6acd20c8ca3f0202a1502debca15
     ],
     // Configuration overrides during development mode
     'module_listener_options' => [

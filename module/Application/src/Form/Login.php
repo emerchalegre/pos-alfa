@@ -28,6 +28,7 @@ class Login extends Form {
             'type' => 'Submit',
             'attributes' => [
                 'value' => 'Entrar',
+                'class' => 'btn btn-primary'
             ],
         ]);
     }
